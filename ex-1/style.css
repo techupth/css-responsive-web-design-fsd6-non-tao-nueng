@@ -17,8 +17,9 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 30px;
   align-items: center;
+  padding-bottom: 110.5px;
 }
 .box-1 {
   width: 312px;
@@ -38,18 +39,27 @@ body {
 
 }
 .box-2 {
-  width: 1420px;
-  height: 566px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
   gap: 29.33px;
   background-color: white;
-  position: absolute;
-  top: 235.95px;
-  gap: 29.33;
+  justify-content: center;
+}
+.box-3 {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 29.33px;
+  background-color: white;
+  justify-content: center;
+  padding-bottom: 140.5px;
 }
 .item {
+  width: 333px;
+  height: 268px;
   background-color: white;
   position: relative;
   border-radius: 8px;
@@ -168,9 +178,16 @@ body {
 }
 @media only screen and (max-width:375px) {
     .box-2 {
-        display: grid;
-        grid-template-columns: 333px;
-        grid-template-rows: 268px 268px 268px 268px 268px 268px 268px 268px 268px;
-        gap: 29.33px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 79.8px;
     }
 }
