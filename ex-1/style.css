@@ -1,1 +1,196 @@
 /* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.grad {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 131, 69, 0.9) 50%,
+    rgba(255, 131, 69, 0.9) 100%
+  );
+}
+
+.section-job {
+  /* background-color: blue; */
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  margin: 65px 250px 736px 250px;
+  gap: 3px;
+}
+
+.box-default {
+  width: 333px;
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border: 2px solid rgb(128, 128, 128, 0.05);
+  padding: 10px 10px 10px 10px;
+  border-radius: 9px;
+}
+
+/* .title {
+} */
+
+.top-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  /* background-color: red; */
+}
+
+.bottom-box {
+  display: flex;
+  justify-content: center;
+  /* background-color: green; */
+}
+
+.overlay {
+  color: rgb(85, 85, 85, 0.77);
+}
+
+.logo {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 131, 69, 0.2);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+.acc-logo {
+  font-size: 3rem;
+  color: #fff;
+  background-color: rgb(255, 131, 69);
+  box-shadow: 1px 1px #777;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid rgb(85, 85, 85, 0.07);
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.acc-btn {
+  background-color: rgb(128, 128, 128, 0.1);
+  border: none;
+}
+
+.explore-btn {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #ff8345;
+  /* border: 7px solid rgb(85, 85, 85, 0.07); */
+  border: none;
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  right: 15px;
+}
+
+.digital-box {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.art-box {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.account-box {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(128, 128, 128, 0.1);
+  position: relative;
+}
+
+.photo-box {
+  position: relative;
+}
+
+.copy-box {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.music-box {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.hr-box {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.explore-box {
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  justify-content: center;
+  padding-left: 10px;
+  background-color: #ff8345;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-job {
+    /* background-color: aqua; */
+  }
+  .top-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-box {
+    width: 333px;
+  }
+}
